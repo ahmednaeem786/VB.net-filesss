@@ -1,2 +1,2 @@
 # VB.net-filesss
-umm... i'll upload basic vb.net program files here😁
+hey, i'm ahmed. this repository is for vb.net files and yea.
