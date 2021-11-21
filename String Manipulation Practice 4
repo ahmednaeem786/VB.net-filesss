@@ -1,0 +1,37 @@
+Module Module1
+
+    Sub Main()
+        'Counting Number of alphabets and digits in a string
+        Dim str1 As String
+        Dim i, digitcounter, alphacounter As Integer
+        Dim char1 As Char
+        str1 = ""
+        char1 = ""
+        i = 0
+        alphacounter = 0
+        digitcounter = 0
+
+        Console.Write("Please enter string to process: ")
+        str1 = Console.ReadLine
+
+        For i = 1 To Len(str1)
+            char1 = Mid(str1, i, 1)
+            char1 = UCase(char1)
+            'you can also lowercase this char1 and apply a different range
+            If char1 >= "A" And char1 <= "Z" Then
+                alphacounter = alphacounter + 1
+            ElseIf char1 >= "0" And char1 <= "9" Then
+                digitcounter = digitcounter + 1
+
+            End If
+
+
+        Next i
+
+        Console.WriteLine("Alphabets are: " & alphacounter)
+        Console.WriteLine("Digits are: " & digitcounter)
+
+        Console.ReadKey()
+    End Sub
+
+End Module
